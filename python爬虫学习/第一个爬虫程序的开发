@@ -1,0 +1,7 @@
+from urllib.request import urlopen#从软件库的模块引进功能
+url="http://www.aiqiyi.com"
+
+resp=urlopen(url)
+#print(resp.read().decode("utf-8"))  #decode()代表解码
+with open("myaiqiyi.html","w",encoding="utf-8") as f:
+    f.write(resp.read().decode("utf-8"))

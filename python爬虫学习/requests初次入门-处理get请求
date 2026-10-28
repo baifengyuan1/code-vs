@@ -1,0 +1,12 @@
+import requests
+
+content=input("请输入你要检索的内容:")
+url=f"https://sogou.com/web?query={content}"
+
+headers={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"}
+#添加一个头信息，UA
+
+resp=requests.get(url,headers=headers)
+resp.encoding="utf-8"
+
+print(resp.text)

@@ -1,0 +1,29 @@
+#1.基础语法
+"""
+open(filename,mode,encoding)
+filename:文件名或路径
+mode：打开模式
+encoding：编码方式
+'r':读取  'w':写入（文件存在时会覆盖原内容）  's':追加  'x':创建
+"""
+
+'''
+file是文件对象，里面包含了文件描述符
+file.read()  file。write()  file.close()
+相对路径：以.或者..开始的路径表示相对路径
+.表示当前目录 ..表示上一级目录
+
+以根目录开始
+'''
+
+file_w=open('./example.txt','w',encoding="utf-8")
+data=file_w.write("i am kylian mbappe")
+print(data)
+
+file_w.close()
+
+file_r=open("./example.txt","r",encoding="utf_8")
+new_data=file_r.read()
+print(new_data)
+
+file_r.close()

@@ -1,0 +1,17 @@
+#导入形式
+#import 包名.模块名
+#from 包名 import 模块名
+#from 包名 import *
+#from 包名.模块名 import 功能名
+#from 包名.模块名 import *
+
+#导入模块
+# import utils.my_fun
+
+# utils.my_fun.log_separator1()
+
+#注意：如果通过这种方式导入模块，需要向__init__.py文件中添加__all__=[]
+from utils import *
+
+my_fun.log_separator1()
+print(my_var.NAME)

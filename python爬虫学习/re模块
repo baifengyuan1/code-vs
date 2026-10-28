@@ -1,0 +1,21 @@
+import re
+
+content="abcdefghij,我今年18岁，我有2000000000000"
+
+# result=re.findall(r"\d+",content)
+# print(result)
+
+# result=re.finditer(r"\d+",content)
+# for item in result:
+#     print(item.group())
+
+# result=re.search(r"\d+",content)    #search只会匹配到第一次匹配到的内容
+# print(result)
+
+# result=re.match(r"\d+",content)    #match匹配的时候是从开头的位置匹配的，类似在正则式前加上了^
+# print(result)
+
+#预加载，提前把正则对象加载完毕
+obj=re.compile(r"\d+")
+result=obj.findall(content)
+print(result)

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #abc{
+            color:blue
+        }  
+        /* li{
+            border:1px solid red
+        } */
+        .jay{
+            color:aquamarine
+        }
+        /* ul li{
+            color:brown
+        }代表所有的li都包括在内 */
+        ul >li{
+            color:blueviolet/*代表只有ul直系亲属包括在内*/
+        }
+        h1+h2{
+            color:bisque
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>周润发</li>
+        <li id="abc">黎明1</li>
+        <li>周星驰</li>
+        <li>Kaka</li>
+    </ul>
+    <ol>
+        <li>手电筒</li>
+        <li>电视机</li>
+        <li>黑板擦</li>
+    </ol>
+
+    <div class="jay">
+        我喜欢你
+    </div>
+    <span class="jay">
+        我也是
+    </span>
+
+    <h1>
+        我喜欢沐婉荷
+    </h1>
+    <h2>
+        我好喜欢你
+    </h2>
+    <h2>
+        我也一样
+    </h2>
+</body>
+</html>
